@@ -8,7 +8,10 @@ import org.springframework.context.annotation.Configuration
 
 @Slf4j
 @Configuration
-class FlyWayConfig(private val flywayProperties: FlywayProperties) {
+class FlyWayConfig() {
+
+    lateinit var flywayProperties: FlywayProperties
+
     @Bean(initMethod = "migrate")
     fun flyWay(): Flyway {
         return Flyway(Flyway

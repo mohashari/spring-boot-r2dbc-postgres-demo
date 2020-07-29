@@ -13,9 +13,9 @@ class ProductController {
     @Autowired
     lateinit var productRepo: ProductRepo
 
-    @GetMapping("")
-    open fun getProduct(): Flux<Product> {
-        return productRepo.findAll();
+    @GetMapping("/product")
+    fun getProduct(): Flux<Product> {
+        return productRepo.findAll()
     }
 
 }

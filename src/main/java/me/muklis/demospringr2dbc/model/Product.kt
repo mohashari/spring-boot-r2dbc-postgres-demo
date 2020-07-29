@@ -7,9 +7,9 @@ import javax.persistence.Entity
 class Product {
 
     @Id
-    val id: Int = 0
-    val name: String = ""
-    val price: Long = 0L
-    val quantity: Int = 0
+    var id: Int = 0
+    var name: String = ""
+    var price: Long = 0L
+    var quantity: Int = 0
 
 }
