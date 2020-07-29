@@ -1,4 +1,4 @@
-package me.muklis.demospringr2dbc;
+package me.muklis.demospringr2dbc.controller;
 
 import me.muklis.demospringr2dbc.model.AuUser;
 import me.muklis.demospringr2dbc.repo.AuUserRepo;
